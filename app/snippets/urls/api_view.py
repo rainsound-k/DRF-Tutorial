@@ -1,13 +1,11 @@
 from django.urls import path
 from rest_framework.urlpatterns import format_suffix_patterns
 
-from . import views
-
-app_name = 'snippets'
+from ..apis import api_view
 
 urlpatterns = [
-    path('', views.SnippetList.as_view()),
-    path('<int:pk>/', views.SnippetDetail.as_view()),
+    path('', api_view.SnippetList.as_view()),
+    path('<int:pk>/', api_view.SnippetDetail.as_view()),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)
