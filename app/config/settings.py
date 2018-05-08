@@ -41,6 +41,8 @@ REST_FRAMEWORK = {
     )
 }
 
+AUTH_USER_MODEL = 'members.User'
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -51,6 +53,7 @@ INSTALLED_APPS = [
 
     'rest_framework',
 
+    'members',
     'snippets',
 ]
 
