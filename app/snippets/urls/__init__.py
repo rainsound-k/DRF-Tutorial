@@ -6,4 +6,5 @@ urlpatterns = [
     path('mixins/', include('snippets.urls.mixins')),
     path('generic/', include('snippets.urls.generic')),
     path('viewsets/', include('snippets.urls.viewsets')),
+    path('routers/', include('snippets.urls.routers')),
 ]
